@@ -1,14 +1,21 @@
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./css/index.css";
+import Layout from "./core/Layout.js";
+import Default from "./pages/Default.js";
+//import TR from "./pages/TR.js";
+//import EN from "./pages/EN.js";
+
+export default function App() {
   return (
-    <div>
-      <header>
-        <h1 className="h-screen flex items-center justify-center text-4xl">
-          ACAR GERİ DÖNÜŞÜM <br></br><br></br>
-          Demir Çelik Sektörünün en köklülerinden!
-        </h1>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Default />} />
+        {/* 
+        <Route path="/tr" element={<Layout pageContent={<TR />} />} />
+        <Route path="/en" element={<Layout pageContent={<EN />} />} />
+        */}
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

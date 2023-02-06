@@ -20,6 +20,9 @@ module.exports = {
           DEFAULT: "1rem",
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         primary: {
           700: "#306da3",
