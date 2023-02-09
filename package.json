@@ -1,7 +1,8 @@
 {
   "name": "acar-website",
-  "homepage": "http://acargeridonusum.com.tr/",
+  "homepage": "https://acargeridonusum.com.tr/",
   "version": "0.1.0",
+  "description": "Official website for the company of Acar Geri Dönüşüm Ltd. Şti.",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
