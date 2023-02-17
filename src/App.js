@@ -1,19 +1,17 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./css/index.css";
-import Layout from "./core/Layout.js";
-import Default from "./pages/Default.js";
-//import TR from "./pages/TR.js";
-//import EN from "./pages/EN.js";
+import Language from "./pages/Language.js";
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Default />} />
+        <Route path="/" element={<Language />} />
         {/* 
-        <Route path="/tr" element={<Layout pageContent={<TR />} />} />
-        <Route path="/en" element={<Layout pageContent={<EN />} />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         */}
       </Routes>
     </Router>

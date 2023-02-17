@@ -1,14 +1,4 @@
-//-> Language selection için kullanılacak, önce UI design...
-//import { useHistory } from "react-router-dom";
-
 export default function Default() {
-    /*
-    const history = useHistory(); 
-
-    const handleLanguageSelection = (language) => {
-        history.push(`/${language}`);
-    };
-    */
     return(
         <div className="h-[100vh] flex items-center">
             <div className="container lg:px-60">
@@ -32,9 +22,5 @@ export default function Default() {
                 </div>
             </div>
         </div>
-        /*
-        <button onClick={() => handleLanguageSelection("tr")}>TR</button>
-        <button onClick={() => handleLanguageSelection("en")}>EN</button> 
-        */
     );
 }
