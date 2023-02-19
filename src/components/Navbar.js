@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isNavbar, setIsNavbar] = useState(false);
 
     return (
-        <header className="relative bg-slate-50 shadow-lg border-y-2 border-primary-900 h-32 flex flex-col items-center justify-center">
+        <header className="relative bg-slate-50 shadow-xl border-y-2 border-primary-900 h-32 flex flex-col items-center justify-center">
             <div className="container flex items-center justify-between md:gap-0 gap-40 text-lg">
                 <Link className="hover:scale-105 animation" to="/home">
                     <img
@@ -60,8 +60,8 @@ export default function Navbar() {
 
             {/* mobile navbar items */}
             <div className={`${
-                    isNavbar ? "mobile-nav-active" : " !opacity-0 !h-0 animation"
-                } w-full h-0 opacity-0 md:hidden absolute top-28 bg-slate-50 border-b-2 border-primary-900`}>
+                    isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 animation"
+                } w-full h-0 opacity-0 md:hidden absolute top-28 bg-slate-50 border-b-2 border-primary-900 shadow-xl`}>
 
                 <nav className="container">
                     <ul className="flex flex-col items-center gap-6">
