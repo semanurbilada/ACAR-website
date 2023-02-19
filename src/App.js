@@ -14,7 +14,7 @@ export default function App() {
     <div className="bg-gray-300">
       <Router>
         <Routes>
-          <Route path="/" element={<Layout pageContent={<Language />} />} />
+          <Route path="/" element={<Language />} />
           <Route path="/home" element={<Layout pageContent={<Home />} />} />
           <Route path="/places" element={<Layout pageContent={<Places />} />} />
           <Route path="/products" element={<Layout pageContent={<Products />} />} />

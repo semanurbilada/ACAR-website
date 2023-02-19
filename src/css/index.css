@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @layer base {
   * {
@@ -14,5 +14,17 @@
 
   .base-button {
     @apply px-6 py-3 text-center w-full rounded-xl bg-primary-900 animation hover:scale-105 hover:bg-white hover:text-primary-900;
+  }
+
+  .nav-item {
+    @apply text-primary-700 font-bold hover:bg-gray-transparent animation rounded-xl p-2;
+  }
+
+  .nav-active {
+    @apply bg-gray-transparent rounded-xl p-2;
+  }
+
+  .mobile-nav-active {
+    @apply opacity-100 h-80 animation !important;
   }
 }
