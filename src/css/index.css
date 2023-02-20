@@ -27,4 +27,8 @@
   .mobile-nav-active {
     @apply opacity-100 h-80 animation !important;
   }
+
+  .icon-social {
+    @apply hover:fill-primary-700 animation;
+  }
 }
