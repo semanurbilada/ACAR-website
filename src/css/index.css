@@ -31,4 +31,12 @@
   .icon-social {
     @apply hover:fill-primary-700 animation;
   }
+
+  .section-default {
+    @apply container min-h-screen md:my-0 my-10 flex md:flex-row flex-col items-center;
+  }
+
+  .contact-items {
+    @apply flex flex-col items-center justify-center gap-10 p-10 md:bg-primary-transparent rounded-xl md:shadow-2xl md:hover:scale-105 animation;
+  }
 }
