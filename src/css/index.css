@@ -33,7 +33,7 @@
   }
 
   .section-default {
-    @apply container min-h-screen md:my-0 my-10 flex md:flex-row flex-col items-center;
+    @apply h-screen flex items-center justify-center;
   }
 
   .contact-items {

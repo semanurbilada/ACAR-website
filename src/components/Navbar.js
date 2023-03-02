@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Icons from "./icons/Icon.js";
+import Icons from "./icons/Icons.js";
 
 export default function Navbar() {
     const location = useLocation().pathname;
