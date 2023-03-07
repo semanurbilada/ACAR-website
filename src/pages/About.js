@@ -1,6 +1,6 @@
 export default function About() {
     return(
-        <section className="section-default md:my-0 my-20 md:text-xl sm:text-xl text-base text-primary-900">
+        <section className="section-default md:my-0 my-10 md:text-xl sm:text-xl text-base text-primary-900">
             <div className="container flex md:flex-row flex-col items-center justify-center md:gap-16 gap-4">
                 <div className="md:bg-primary-transparent md:p-10 p-0 rounded-xl md:shadow-2xl flex flex-col items-center">
                     <h3 

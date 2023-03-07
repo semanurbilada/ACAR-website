@@ -33,7 +33,11 @@
   }
 
   .section-default {
-    @apply h-screen flex items-center justify-center;
+    @apply min-h-screen flex items-center justify-center;
+  }
+
+  .footer-default {
+    @apply container pt-14 flex items-center justify-center;
   }
 
   .contact-items {

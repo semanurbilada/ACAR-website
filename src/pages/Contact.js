@@ -2,7 +2,7 @@ import Icons from "../components/icons/Icons";
 
 export default function Contact() {
     return(
-        <section className="section-default md:my-0 my-10">
+        <section className="section-default">
             <div className="container flex md:flex-row flex-col items-center justify-between md:text-xl text-lg text-primary-900">
                 <div className="contact-items">
                     <Icons iconName="phone" />
