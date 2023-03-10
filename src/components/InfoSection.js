@@ -39,12 +39,12 @@ export default function InfoSection({
                 </div>
 
                 <div className="flex flex-col items-center justify-center md:gap-2 gap-0" data-aos="fade-up">
-                    <Icons iconName={icon} />
 
                     <h5 className="text-primary-700 md:text-4xl text-xl">
                         {servicesSecondTitle}
                     </h5><br/>
                     
+                    <Icons iconName={icon} />
                     <p className="text-primary-900 md:text-xl text-lg">
                         {address} {servicesInfo1} 
                     </p><br/>
