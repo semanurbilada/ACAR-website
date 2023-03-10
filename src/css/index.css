@@ -36,6 +36,10 @@
     @apply min-h-screen flex items-center justify-center;
   }
 
+  .mobile-section-default {
+    @apply h-auto my-10 flex items-center justify-center;
+  }
+
   .footer-default {
     @apply container pt-14 flex items-center justify-center;
   }

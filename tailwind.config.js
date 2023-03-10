@@ -31,9 +31,13 @@ module.exports = {
         },
         gray: {
           transparent: "#42566c66",
+          300: "#d1d5db",
           400: "#73787c",
           800: "#393d40",
         },
+      },
+      boxShadow: {
+        'custom': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',
       },
     },
   },

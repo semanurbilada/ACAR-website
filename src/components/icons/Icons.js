@@ -3,8 +3,8 @@ export default function Icons({ iconName, className, onClick }) {
         <svg  
             onClick={onClick}
             className={className}
-            width="43"
-            height="43" 
+            width="43px"
+            height="43px" 
             viewBox="0 0 24 24" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg" 
@@ -63,6 +63,22 @@ export default function Icons({ iconName, className, onClick }) {
         </svg>
     );
 
+    const locationIcon = (
+        <svg 
+            className={className}
+            width="40px" 
+            height="40px" 
+            viewBox="-1.5 0 15 15" 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="#274c6c">
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path fill="#274c6c" fillRule="evenodd" d="M574,120 C575.324428,120 580,114.054994 580,110.833333 C580,107.611672 577.313708,105 574,105 C570.686292,105 568,107.611672 568,110.833333 C568,114.054994 572.675572,120 574,120 Z M574,113.333333 C575.420161,113.333333 576.571429,112.214045 576.571429,110.833333 C576.571429,109.452621 575.420161,108.333333 574,108.333333 C572.579839,108.333333 571.428571,109.452621 571.428571,110.833333 C571.428571,112.214045 572.579839,113.333333 574,113.333333 Z" transform="translate(-568 -105)"></path>
+            </g>
+        </svg>
+    );
+
     const facebookIcon = (
         <svg 
             className={className}
@@ -100,6 +116,7 @@ export default function Icons({ iconName, className, onClick }) {
             {iconName === "mail" && mailIcon}
             {iconName === "users" && usersIcon}
             {iconName === "phone" && phoneIcon}
+            {iconName === "location" && locationIcon}
             {iconName === "facebook" && facebookIcon}
             {iconName === "instagram" && instagramIcon}
         </>

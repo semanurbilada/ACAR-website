@@ -1,13 +1,18 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  Route, 
+  Routes,
+  HashRouter as Router 
+} from "react-router-dom";
+
 import Layout from "./core/Layout";
 import Language from "./pages/Language.js";
+
 import Home from "./pages/Home.js";
 import Places from "./pages/Places.js";
 import Products from "./pages/Products";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
-
 
 export default function App() {
   return (
