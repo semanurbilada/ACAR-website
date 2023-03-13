@@ -8,8 +8,8 @@ export default function Map({
     } }) {
         
     const center = useMemo(() => ({ 
-        lat: 40.85011444662662, 
-        lng: 29.383686129459008
+        lat: 40.850114, 
+        lng: 29.383686
     }), []);
 
     return (

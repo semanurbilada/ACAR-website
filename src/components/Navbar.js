@@ -1,9 +1,45 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import Icons from "./icons/Icons.js";
+import { Link, useLocation } from "react-router-dom";
+
+function NavItems() {
+    const location = useLocation().pathname;
+    return(
+        <>
+            <li 
+                className={`nav-item ${
+                    location === "/home" ? "nav-active" : ""
+                }`}><Link to="/home">Ana Sayfa</Link>
+            </li>
+
+            <li 
+                className={`nav-item ${
+                    location === "/places" ? "nav-active" : ""
+                }`}><Link to="/places">Depolarımız</Link>
+            </li>
+
+            <li 
+                className={`nav-item ${
+                    location === "/products" ? "nav-active" : ""
+                }`}><Link to="/products">Ürünlerimiz</Link>
+            </li>
+
+            <li 
+                className={`nav-item ${
+                    location === "/about" ? "nav-active" : ""
+                }`}><Link to="/about">Hakkımızda</Link>
+            </li>
+
+            <li 
+                className={`nav-item ${
+                    location === "/contact" ? "nav-active" : ""
+                }`}><Link to="/contact">İletişim</Link>
+            </li>
+        </>
+    );
+}
 
 export default function Navbar() {
-    const location = useLocation().pathname;
     const [isNavbar, setIsNavbar] = useState(false);
 
     return (
@@ -25,35 +61,7 @@ export default function Navbar() {
 
                 <nav>
                     <ul className="md:flex hidden gap-x-10">
-                        <li 
-                            className={`nav-item ${
-                                location === "/home" ? "nav-active" : ""
-                            }`}><Link to="/home">Ana Sayfa</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/places" ? "nav-active" : ""
-                            }`}><Link to="/places">Depolarımız</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/products" ? "nav-active" : ""
-                            }`}><Link to="/products">Ürünlerimiz</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/about" ? "nav-active" : ""
-                            }`}><Link to="/about">Hakkımızda</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/contact" ? "nav-active" : ""
-                            }`}><Link to="/contact">İletişim</Link>
-                        </li>
+                        <NavItems />
                     </ul>
                 </nav>
             </div>
@@ -65,35 +73,7 @@ export default function Navbar() {
 
                 <nav className="container">
                     <ul className="flex flex-col items-center gap-6">
-                        <li 
-                            className={`nav-item ${
-                                location === "/home" ? "nav-active" : ""
-                            }`}><Link to="/home">Ana Sayfa</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/places" ? "nav-active" : ""
-                            }`}><Link to="/places">Depolarımız</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/products" ? "nav-active" : ""
-                            }`}><Link to="/products">Ürünlerimiz</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/about" ? "nav-active" : ""
-                            }`}><Link to="/about">Hakkımızda</Link>
-                        </li>
-
-                        <li 
-                            className={`nav-item ${
-                                location === "/contact" ? "nav-active" : ""
-                            }`}><Link to="/contact">İletişim</Link>
-                        </li>
+                        <NavItems />
                     </ul>
                 </nav>
             </div> 

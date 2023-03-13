@@ -44,7 +44,7 @@ export default function InfoSection({
                         {servicesSecondTitle}
                     </h5><br/>
                     
-                    <Icons iconName={icon} />
+                    <Icons iconName={icon} /><br/>
                     <p className="text-primary-900 md:text-xl text-lg">
                         {address} {servicesInfo1} 
                     </p><br/>
