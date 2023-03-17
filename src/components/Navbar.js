@@ -68,7 +68,7 @@ export default function Navbar() {
 
             {/* mobile navbar items */}
             <div className={`${
-                    isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 animation"
+                    isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 pointer-events-none animation"
                 } w-full h-0 opacity-0 md:hidden absolute top-28 bg-slate-50 border-b-2 border-primary-900 shadow-xl z-50 text-base`}>
 
                 <nav className="container">

@@ -25,7 +25,7 @@
   }
 
   .mobile-nav-active {
-    @apply opacity-100 h-80 animation !important;
+    @apply opacity-100 h-80 pointer-events-auto animation !important;
   }
 
   .icon-social {
