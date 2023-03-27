@@ -14,6 +14,11 @@ module.exports = {
       "4xl": "2880px"
     },
     extend: {
+      backgroundImage: {
+        'slide-1' : "url('../../public/slide1.jpg')",
+        'slide-2' : "url('../../public/slide2.jpg')",
+        'slide-3' : "url('../../public/slide3.jpg')",
+      },
       container: {
         center: true,
         padding: {
@@ -37,7 +42,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        'custom': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',
+        'custom': 'inset 0 35px 55px -15px rgba(30, 41, 59)',
       },
     },
   },

@@ -1,11 +1,10 @@
+import HomeSwiper from "../components/HomeSwiper";
 import InfoSection from "../components/InfoSection";
 
 export default function Home() {
     return(
         <div>
-            {/* swiper ;
-            <h1>Demir Çelik Sektörünün en köklülerinden !!!</h1>
-            */}
+            <HomeSwiper />
 
             <section className="container">
                 <InfoSection 
