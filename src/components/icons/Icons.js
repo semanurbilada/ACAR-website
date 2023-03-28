@@ -17,6 +17,7 @@ export default function Icons({ iconName, className, onClick }) {
 
     const usersIcon = (
         <svg 
+            className={className}
             width="45px" 
             height="45px" 
             viewBox="0 0 24 24" 
@@ -32,6 +33,7 @@ export default function Icons({ iconName, className, onClick }) {
 
     const mailIcon = (
         <svg 
+            className={className}
             width="64px" 
             height="64px" 
             viewBox="0 0 24 24" 
@@ -50,6 +52,7 @@ export default function Icons({ iconName, className, onClick }) {
 
     const phoneIcon = (
         <svg 
+            className={className}
             fill="#274c6c" 
             width="64px" 
             height="64px" 

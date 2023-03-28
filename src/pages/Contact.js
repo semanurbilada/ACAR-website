@@ -5,7 +5,7 @@ export default function Contact() {
         <section className="section-default">
             <div className="container grid md:grid-cols-3 grid-cols-1 gap-10 md:text-xl text-lg text-primary-900">
                 <div className="contact-items">
-                    <Icons iconName="phone" />
+                    <Icons iconName="phone" className="w-12 md:w-auto h-12 md:h-auto" />
                     <a
                         href="https://api.whatsapp.com/send?phone=905326861593" 
                         target='_blank' rel='noopener noreferrer nofollow'>
@@ -15,12 +15,12 @@ export default function Contact() {
                 </div>
 
                 <div className="contact-items">
-                    <Icons iconName="users" />
+                    <Icons iconName="users" className="w-9 md:w-auto h-9 md:h-auto" />
                     <p>Murtaza Bilada<br/><br/>Selahattin Bilada</p>
                 </div>
 
                 <div className="contact-items">
-                    <Icons iconName="mail" />
+                    <Icons iconName="mail" className="w-12 md:w-auto h-12 md:h-auto"/>
                     <a
                         href="mailto:info@acargeridonusum.com.tr" 
                         target='_blank' rel='noopener noreferrer nofollow'>

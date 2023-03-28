@@ -3,8 +3,9 @@ import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 export default function Map({ 
     containerStyle = {
-        width: '300px',
-        height: '250px'
+        width: "280px",
+        height: "250px",
+        borderRadius: "8px"
     } }) {
         
     const center = useMemo(() => ({ 

@@ -6,35 +6,45 @@ function NavItems() {
     const location = useLocation().pathname;
     return(
         <>
-            <li 
+            <Link 
                 className={`nav-item ${
                     location === "/home" ? "nav-active" : ""
-                }`}><Link to="/home">Ana Sayfa</Link>
-            </li>
+                }`} to="/home"
+            >
+                <li>Ana Sayfa</li>
+            </Link>
 
-            <li 
+            <Link 
                 className={`nav-item ${
                     location === "/places" ? "nav-active" : ""
-                }`}><Link to="/places">Depolarımız</Link>
-            </li>
+                }`} to="/places"
+            >
+                <li>Depolarımız</li>
+            </Link>
 
-            <li 
+            <Link 
                 className={`nav-item ${
                     location === "/products" ? "nav-active" : ""
-                }`}><Link to="/products">Ürünlerimiz</Link>
-            </li>
+                }`} to="/products"
+            >
+                <li>Ürünlerimiz</li>
+            </Link>
 
-            <li 
+            <Link 
                 className={`nav-item ${
                     location === "/about" ? "nav-active" : ""
-                }`}><Link to="/about">Hakkımızda</Link>
-            </li>
+                }`} to="/about"
+            >
+                <li>Hakkımızda</li>
+            </Link>
 
-            <li 
+            <Link 
                 className={`nav-item ${
                     location === "/contact" ? "nav-active" : ""
-                }`}><Link to="/contact">İletişim</Link>
-            </li>
+                }`} to="/contact"
+            >
+                <li>İletişim</li>
+            </Link>
         </>
     );
 }

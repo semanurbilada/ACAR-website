@@ -44,7 +44,7 @@ export default function InfoSection({
                         {servicesSecondTitle}
                     </h5><br/>
                     
-                    <Icons iconName={icon} /><br/>
+                    <Icons iconName={icon} className="w-8 md:w-auto h-8 md:h-auto"/><br/>
                     <p className="text-primary-900 md:text-xl text-lg">
                         {address} {servicesInfo1} 
                     </p><br/>
@@ -54,13 +54,15 @@ export default function InfoSection({
                     </p><br/>
                     
                     { location === "/home" ? (
-                            <Link
-                                className="base-button w-auto text-gray-50 hover:bg-primary-700 hover:text-gray-50 font-bold shadow-xl" 
-                                to="/products"
-                            >
-                                {button}
-                            </Link> )
-                    :   <div></div> }
+                        <Link
+                            className="base-button w-auto text-gray-50 hover:bg-primary-700 hover:text-gray-50 md:font-bold md:text-base text-sm shadow-xl" 
+                            to="/products"
+                        >
+                            {button}
+                        </Link> 
+                    ) : 
+                        <div></div>
+                    }
                 </div>
             </div>
         </div>

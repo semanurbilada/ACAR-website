@@ -24,12 +24,12 @@ function FollowSection() {
                 <a 
                     href="https://www.facebook.com/ACAR-Geri-Dönüşüm-Ve-Metal-Ürn-San-Tic-Ltd-Şti-780224742056349/?fref=nf/" 
                     target='_blank' rel='noopener noreferrer nofollow'>
-                    <Icons className="icon-social" iconName="facebook"/>
+                    <Icons className="icon-social w-11 md:w-auto h-11 md:h-auto" iconName="facebook"/>
                 </a>
                 <a 
                     href="https://www.instagram.com/acar_geri_donusum/" 
                     target='_blank' rel='noopener noreferrer nofollow'>
-                    <Icons className="icon-social" iconName="instagram"/>
+                    <Icons className="icon-social w-12 md:w-auto h-12 md:h-auto" iconName="instagram"/>
                 </a>
             </div>
         </>
@@ -43,8 +43,8 @@ export default function Footer() {
         <footer className="relative bg-gray-transparent md:text-lg text-base text-primary-900">
 
             { location === "/about" || location === "/contact" ? (
-                <div className="footer-default flex-col md:gap-8 gap-4">
-                    <div className="flex md:flex-row flex-col items-center justify-center gap-2">
+                <div className="footer-default flex-col">
+                    <div className="flex md:flex-row flex-col items-center gap-2">
                         <FollowSection />
                     </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
                     </div>
                 </div>
             ) :
-                <div className="footer-default md:flex-row flex-col gap-12">
+                <div className="footer-default md:flex-row flex-col justify-center md:gap-0 gap-4">
                     <div className="flex flex-col md:items-start items-center justify-center gap-8 basis-1/3">
                         <img 
                             className="h-auto md:w-56 w-44 cursor-pointer hover:scale-105 animation" 
