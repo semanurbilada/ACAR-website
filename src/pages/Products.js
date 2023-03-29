@@ -1,9 +1,9 @@
+import ComingSoon from "../components/ComingSoon";
+
 export default function Products() {
     return(
         <section className="section-default">
-            <div className="container">
-                
-            </div>
+            <ComingSoon />
         </section>
     );
 }
