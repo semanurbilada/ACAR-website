@@ -13,7 +13,11 @@
   }
 
   .base-button {
-    @apply px-6 py-3 text-center w-full rounded-xl bg-primary-900 animation hover:scale-105 hover:bg-white hover:text-primary-900;
+    @apply md:px-6 md:py-3 px-3 py-2 text-center w-full rounded-xl bg-primary-900 animation hover:scale-105 hover:bg-white hover:text-primary-900;
+  }
+
+  .fixed-button {
+    @apply md:px-6 md:py-4 px-5 py-3 bg-primary-700 rounded-2xl text-white font-bold shadow-xl hover:bg-slate-50 hover:text-primary-900 hover:scale-110 animation;
   }
 
   .nav-item {
