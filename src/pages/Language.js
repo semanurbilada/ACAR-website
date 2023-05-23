@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function Default() {
+export default function Language() {
     return(
         <div className="h-[100vh] flex items-center">
             <div className="container lg:px-60">
