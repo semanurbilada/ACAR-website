@@ -8,5 +8,5 @@ export default function FixedButtons() {
         </div>
     );
 
-    //TO DO: butonlar, useContext'te tercihe göre render olmalı !
+    //TODO: butonlar, useContext'te tercihe göre render olmalı !
 }

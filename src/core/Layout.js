@@ -11,6 +11,7 @@ export default function Layout({ pageContent }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
+      behavior: "smooth"
     });
   }, [location]);
 
