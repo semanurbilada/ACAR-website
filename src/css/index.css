@@ -49,6 +49,6 @@
   }
 
   .contact-items {
-    @apply h-full flex flex-col items-center justify-center gap-10 p-10 md:bg-primary-transparent rounded-xl md:shadow-2xl md:hover:scale-105 animation;
+    @apply h-full flex flex-col items-center justify-center gap-10 py-10 md:bg-primary-transparent rounded-xl md:shadow-2xl md:hover:scale-105 animation;
   }
 }

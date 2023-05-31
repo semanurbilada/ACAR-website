@@ -3,7 +3,7 @@ import Icons from "../components/icons/Icons";
 export default function Contact() {
     return(
         <section className="section-default">
-            <div className="container grid md:grid-cols-3 grid-cols-1 gap-10 md:text-xl text-lg text-primary-900">
+            <div className="container grid md:grid-cols-2 grid-cols-1 md:gap-32 md:text-xl text-lg text-primary-900">
                 <div className="contact-items">
                     <Icons iconName="phone" className="w-12 md:w-auto h-12 md:h-auto" />
                     <a
@@ -13,12 +13,7 @@ export default function Contact() {
                     </a>
                     <a href="tel:(0262) 658 13 60">Ofis: (0262) 658 13 60</a>
                 </div>
-
-                <div className="contact-items">
-                    <Icons iconName="users" className="w-9 md:w-auto h-9 md:h-auto" />
-                    <p>Murtaza Bilada<br/><br/>Selahattin Bilada</p>
-                </div>
-
+                
                 <div className="contact-items">
                     <Icons iconName="mail" className="w-12 md:w-auto h-12 md:h-auto"/>
                     <a

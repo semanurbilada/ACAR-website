@@ -1,3 +1,5 @@
+import PopUp from "../components/PopUp";
+
 import HomeSwiper from "../components/HomeSwiper";
 import InfoSection from "../components/InfoSection";
 
@@ -6,7 +8,7 @@ export default function Home() {
         <div>
             <HomeSwiper />
 
-            <section className="container">
+            <section className="container my-20 md:my-0">
                 <InfoSection 
                     image="/services.jpg" size={800}
                     servicesTitle="HİZMETLERİMİZ"
