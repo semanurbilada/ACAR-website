@@ -1,12 +1,18 @@
 import Icons from "./icons/Icons";
+import { useContext } from "react";
+import { StateContext } from "../App.js";
+import { ProductsData } from "../services/data";
 
 export default function ComingSoon() {
+    const { language } = useContext(StateContext);
+    const productsData = ProductsData[language];
+
     return(
-        <div className="container flex flex-col gap-24 items-center md:text-3xl text-xl text-primary-900">
-            <div className="py-10 px-12 rounded-xl md:bg-primary-transparent bg-transparent md:shadow-2xl flex flex-col items-center gap-8">
-                <h4>Detaylı ürünler sayfamız yakında sizlerle!
+        <div className="md:bg-primary-transparent bg-transparent md:shadow-2xl rounded-xl flex flex-col gap-24 items-center">
+            <div className="container py-14 px-12 flex flex-col items-center gap-8 md:text-3xl text-xl text-primary-900">
+                <h4>{productsData[0].content1}
                     <br/><br/>
-                    Ürün stoklarımız hakkında bilgi<br/>almak için bizimle iletişime geçin:
+                    {productsData[0].content2}
                 </h4>
                 
                 <a href="tel:05326861593"

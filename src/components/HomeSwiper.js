@@ -1,9 +1,15 @@
 import 'swiper/css';
 import "../css/swiper.css";
+import { useContext } from "react";
+import { StateContext } from "../App.js";
 import { Pagination, Autoplay } from "swiper";
+import { HomeSwiperData } from '../services/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function HomeSwiper() {
+    const { language } = useContext(StateContext);
+    const swiperData = HomeSwiperData[language];
+
     return(
         <Swiper 
             className="w-full shadow-2xl z-30"
@@ -21,19 +27,19 @@ export default function HomeSwiper() {
         >
             <SwiperSlide className="bg-slide-1 bg-fixed bg-cover shadow-custom">
                 <h1 className="text-primary-900  md:text-5xl text-2xl font-bold text-center">
-                    Demir, Çelik Sektörünün en köklülerinden!
+                    {swiperData[0].content1}
                 </h1>
             </SwiperSlide>
 
             <SwiperSlide className="bg-slide-2 bg-cover shadow-custom">
                 <h2 className="text-white md:text-4xl text-2xl font-bold text-center">
-                    Kaliteli Demir, Çelik ve Metal için doğru adres!
+                    {swiperData[1].content2}
                 </h2>
             </SwiperSlide>
 
             <SwiperSlide className="bg-slide-3 bg-cover shadow-custom">
                 <h2 className="text-white md:text-4xl text-2xl font-bold text-center">
-                    Sektörün lideri olarak Demir, Çelik ve Metal Geri Dönüşümüne katkıda bulunuyoruz!
+                    {swiperData[2].content3}
                 </h2>
             </SwiperSlide>
         </Swiper>

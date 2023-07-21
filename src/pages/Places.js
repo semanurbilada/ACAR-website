@@ -1,24 +1,30 @@
+import { useContext } from "react";
+import { StateContext } from "../App.js";
 import InfoSection from '../components/InfoSection';
+import { InfoSectionData } from "../services/data.js";
 
 export default function Places() {
+    const { language } = useContext(StateContext);
+    const infoData = InfoSectionData[language];
+
     return(
         <section className="container flex flex-col">
             <InfoSection 
-                mainTitle="ANA DEPO"
+                mainTitle={infoData[0].mainTitle1}
                 image="/main.jpg"
                 place="Main"
                 size={750}
                 icon="location"
-                address="Adres: Şekerpınar, Ayça Sk. No:21, 41420 Çayırova/Kocaeli"
+                address={infoData[0].address1}
             />
 
             <InfoSection 
-                secondTitle="2 NO'LU DEPO"
+                mainTitle={infoData[0].mainTitle2}
                 image="/second.jpg"
                 place="Second"
                 size={700}
                 icon="location"
-                address="Adres: 20 Damla Sokak, Çayırova/Kocaeli"
+                address={infoData[0].address2}
             />
         </section>
     );

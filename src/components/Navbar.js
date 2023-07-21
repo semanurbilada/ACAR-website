@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { StateContext } from "../App.js";
 import Icons from "./icons/Icons.js";
+import { navlinks } from "../services/data.js";
 import { Link, useLocation } from "react-router-dom";
 
 function NavItems() {
     const location = useLocation().pathname;
+    const { language } = useContext(StateContext);
+    const navbar = navlinks[language]; 
+
     return(
         <>
             <Link 
@@ -11,7 +16,7 @@ function NavItems() {
                     location === "/home" ? "nav-active" : ""
                 }`} to="/home"
             >
-                <li>Ana Sayfa</li>
+                <li>{navbar[0].home}</li>
             </Link>
 
             <Link 
@@ -19,7 +24,7 @@ function NavItems() {
                     location === "/places" ? "nav-active" : ""
                 }`} to="/places"
             >
-                <li>Depolarımız</li>
+               <li>{navbar[0].places}</li>
             </Link>
 
             <Link 
@@ -27,7 +32,7 @@ function NavItems() {
                     location === "/products" ? "nav-active" : ""
                 }`} to="/products"
             >
-                <li>Ürünlerimiz</li>
+                <li>{navbar[0].products}</li>
             </Link>
 
             <Link 
@@ -35,7 +40,7 @@ function NavItems() {
                     location === "/about" ? "nav-active" : ""
                 }`} to="/about"
             >
-                <li>Hakkımızda</li>
+                <li>{navbar[0].about}</li>
             </Link>
 
             <Link 
@@ -43,7 +48,7 @@ function NavItems() {
                     location === "/contact" ? "nav-active" : ""
                 }`} to="/contact"
             >
-                <li>İletişim</li>
+                <li>{navbar[0].contact}</li>
             </Link>
         </>
     );

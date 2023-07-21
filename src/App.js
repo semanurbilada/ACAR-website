@@ -1,9 +1,5 @@
-import { useState, createContext } from "react";
-import {
-  Route, 
-  Routes,
-  HashRouter as Router 
-} from "react-router-dom";
+import { useState, useEffect, createContext } from "react";
+import { Route, Routes, HashRouter as Router } from "react-router-dom";
 
 import Layout from "./core/Layout";
 import Language from "./pages/Language.js";
@@ -16,10 +12,18 @@ import Contact from "./pages/Contact.js";
 
 export const StateContext = createContext({
   language: null,
+  setLanguage: () => {} 
 });
 
 export default function App() {
-  const [ language, setLanguage ] = useState("TR");
+  const [ language, setLanguage ] = useState(() => {
+    const storedLanguage = localStorage.getItem('language');
+    return storedLanguage ?  storedLanguage: "TR";
+  });
+
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language])
 
   return (
     <div className="bg-gray-300">

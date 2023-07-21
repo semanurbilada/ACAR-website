@@ -1,6 +1,14 @@
+import { useContext } from "react";
+import { StateContext } from "../App.js";
 import { Link } from 'react-router-dom';
 
 export default function Language() {
+    const { setLanguage } = useContext(StateContext);
+
+    const selectLanguage = (language) => {
+        setLanguage(language);
+    };
+
     return(
         <div className="h-[100vh] flex items-center">
             <div className="container lg:px-60">
@@ -14,8 +22,17 @@ export default function Language() {
                     </h1>
 
                     <div className="flex flex-col w-full text-3xl md:text-2xl md:w-auto md:flex-row md:gap-x-12 gap-y-3">
-                        <Link className="base-button" to="/home">Türkçe</Link>
-                        <Link className="base-button" to="/home">English</Link>
+                        <Link 
+                            className="base-button" 
+                            onClick={() => selectLanguage("TR")}
+                            to="/home">Türkçe
+                        </Link>
+
+                        <Link 
+                            className="base-button" 
+                            onClick={() => selectLanguage("EN")}
+                            to="/home">English
+                        </Link>
                     </div>
                 </div>
             </div>
