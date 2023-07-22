@@ -11,7 +11,7 @@ export default function About() {
             <div className="container grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-4">
                 <div className="h-full md:bg-primary-transparent md:p-10 p-0 rounded-xl md:shadow-2xl flex flex-col items-center gap-6">
                     <h3 
-                        className="font-bold md:text-2xl text-xl md:bg-transparent bg-primary-transparent rounded-xl shadow-2xl md:shadow-none"
+                        className="md:text-2xl text-xl md:bg-transparent bg-primary-transparent rounded-xl shadow-2xl md:shadow-none"
                     >
                         {aboutData[0].title}
                     </h3>

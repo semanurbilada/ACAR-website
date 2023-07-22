@@ -4,7 +4,7 @@ import Icons from "./icons/Icons.js";
 import { navlinks } from "../services/data.js";
 import { Link, useLocation } from "react-router-dom";
 
-function NavItems() {
+function NavItems({ setIsNavbar }) {
     const location = useLocation().pathname;
     const { language } = useContext(StateContext);
     const navbar = navlinks[language]; 
@@ -14,7 +14,9 @@ function NavItems() {
             <Link 
                 className={`nav-item ${
                     location === "/home" ? "nav-active" : ""
-                }`} to="/home"
+                }`} 
+                to="/home" 
+                onClick={() => {setIsNavbar(false)}}
             >
                 <li>{navbar[0].home}</li>
             </Link>
@@ -22,7 +24,9 @@ function NavItems() {
             <Link 
                 className={`nav-item ${
                     location === "/places" ? "nav-active" : ""
-                }`} to="/places"
+                }`} 
+                to="/places"
+                onClick={() => {setIsNavbar(false)}}
             >
                <li>{navbar[0].places}</li>
             </Link>
@@ -30,7 +34,9 @@ function NavItems() {
             <Link 
                 className={`nav-item ${
                     location === "/products" ? "nav-active" : ""
-                }`} to="/products"
+                }`} 
+                to="/products"
+                onClick={() => {setIsNavbar(false)}}
             >
                 <li>{navbar[0].products}</li>
             </Link>
@@ -38,7 +44,9 @@ function NavItems() {
             <Link 
                 className={`nav-item ${
                     location === "/about" ? "nav-active" : ""
-                }`} to="/about"
+                }`} 
+                to="/about"
+                onClick={() => {setIsNavbar(false)}}
             >
                 <li>{navbar[0].about}</li>
             </Link>
@@ -46,7 +54,9 @@ function NavItems() {
             <Link 
                 className={`nav-item ${
                     location === "/contact" ? "nav-active" : ""
-                }`} to="/contact"
+                }`} 
+                to="/contact"
+                onClick={() => {setIsNavbar(false)}}
             >
                 <li>{navbar[0].contact}</li>
             </Link>
@@ -63,7 +73,7 @@ export default function Navbar() {
                 <Link to="/home">
                     <img
                         className="h-auto md:w-48 w-44 hover:scale-105 animation"
-                        src={`${process.env.PUBLIC_URL}/logo.jpg`}
+                        src={`${process.env.PUBLIC_URL}/assets/logo.jpg`}
                         alt="Navbar Logo"
                     />
                 </Link>
@@ -88,7 +98,7 @@ export default function Navbar() {
 
                 <nav className="container">
                     <ul className="flex flex-col items-center gap-6">
-                        <NavItems />
+                        <NavItems setIsNavbar={setIsNavbar} />
                     </ul>
                 </nav>
             </div> 

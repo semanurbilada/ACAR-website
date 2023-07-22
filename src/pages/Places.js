@@ -11,7 +11,7 @@ export default function Places() {
         <section className="container flex flex-col">
             <InfoSection 
                 mainTitle={infoData[0].mainTitle1}
-                image="/main.jpg"
+                image="assets/main.jpg"
                 place="Main"
                 size={750}
                 icon="location"
@@ -20,7 +20,7 @@ export default function Places() {
 
             <InfoSection 
                 mainTitle={infoData[0].mainTitle2}
-                image="/second.jpg"
+                image="assets/second.jpg"
                 place="Second"
                 size={700}
                 icon="location"

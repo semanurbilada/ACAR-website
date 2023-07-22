@@ -41,7 +41,7 @@ export default function Footer() {
                     <div className="flex flex-col items-center justify-center gap-8">
                         <img 
                             className="h-auto md:w-56 w-44 cursor-pointer hover:scale-105 animation" 
-                            src="/logo.jpg" 
+                            src="assets/logo.jpg" 
                             alt="Footer Logo"       
                         />
                         <p className="">
@@ -98,7 +98,7 @@ export default function Footer() {
                 </div>
             }
             
-            <ul className="container py-6 text-sm md:text-base font-bold">
+            <ul className="container py-6 text-sm md:text-base">
                 <li>Copyright © 2023 | Acar Geri Dönüşüm Ltd Şti</li>
             </ul>
         </footer>

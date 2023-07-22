@@ -55,7 +55,7 @@ export default function InfoSection({
                     
                     { location === "/home" ? (
                         <Link
-                            className="base-button w-auto text-gray-50 hover:bg-primary-700 hover:text-gray-50 md:font-bold md:text-base text-sm shadow-xl" 
+                            className="base-button w-auto text-gray-50 hover:bg-primary-700 hover:text-gray-50 md:text-base text-sm shadow-xl" 
                             to="/products"
                         >
                             {button}

@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { StateContext } from "../App.js";
-import PopUp from "../components/PopUp";
 
 import HomeSwiper from "../components/HomeSwiper";
 import InfoSection from "../components/InfoSection";
@@ -16,7 +15,7 @@ export default function Home() {
 
             <section className="container my-20 md:my-0">
                 <InfoSection 
-                    image="/services.jpg" size={800}
+                    image="assets/services.jpg" size={800}
                     servicesTitle={infoData[0].servicesTitle}
                     servicesSecondTitle={infoData[0].servicesSecondTitle}
                     servicesInfo1={infoData[0].servicesInfo1}

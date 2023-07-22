@@ -26,19 +26,19 @@ export default function HomeSwiper() {
             }}
         >
             <SwiperSlide className="bg-slide-1 bg-fixed bg-cover shadow-custom">
-                <h1 className="text-primary-900  md:text-5xl text-2xl font-bold text-center">
+                <h1 className="text-primary-900  md:text-5xl text-2xl text-center">
                     {swiperData[0].content1}
                 </h1>
             </SwiperSlide>
 
             <SwiperSlide className="bg-slide-2 bg-cover shadow-custom">
-                <h2 className="text-white md:text-4xl text-2xl font-bold text-center">
+                <h2 className="text-white md:text-4xl text-2xl text-center">
                     {swiperData[1].content2}
                 </h2>
             </SwiperSlide>
 
             <SwiperSlide className="bg-slide-3 bg-cover shadow-custom">
-                <h2 className="text-white md:text-4xl text-2xl font-bold text-center">
+                <h2 className="text-white md:text-4xl text-2xl text-center">
                     {swiperData[2].content3}
                 </h2>
             </SwiperSlide>
