@@ -158,3 +158,32 @@ export const ContactData = {
         }
     ]
 }
+
+export const PopupData = {
+    TR: [
+        {
+            title: "Çalışma saatlerimiz",
+            content1: "Pazar günleri kapalıyız!",
+            content2: "Pazartesi",
+            content3: "Salı",
+            content4: "Çarşamba",
+            content5: "Perşembe",
+            content6: "Cuma",
+            content7: "Cumartesi",
+            hour: "09:00 - 18:00"
+        }
+    ],
+    EN: [
+        {
+            title: "Our Working Hours",
+            content1: "We are closed on Sundays!",
+            content2: "Monday",
+            content3: "Tuesday",
+            content4: "Wednesday",
+            content5: "Thursday",
+            content6: "Friday",
+            content7: "Saturday",
+            hour: "9 AM - 6 PM"
+        }
+    ]
+}

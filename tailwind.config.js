@@ -15,9 +15,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'slide-1' : "url('../../public/slide1.jpg')",
-        'slide-2' : "url('../../public/slide2.jpg')",
-        'slide-3' : "url('../../public/slide3.jpg')",
+        'slide-1' : "url('../../public/assets/slide1.jpg')",
+        'slide-2' : "url('../../public/assets/slide2.jpg')",
+        'slide-3' : "url('../../public/assets/slide3.jpg')",
       },
       container: {
         center: true,
@@ -43,6 +43,19 @@ module.exports = {
       },
       boxShadow: {
         'custom': 'inset 0 35px 55px -15px rgba(30, 41, 59)',
+      },
+      animation: {
+        'open-popup': 'open-popup 0.4s ease forwards',
+      },
+      keyframes: {
+        'open-popup': {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
       },
     },
   },

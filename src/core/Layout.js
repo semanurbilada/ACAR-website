@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import PopUp from "../components/PopUp";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FixedButtons from "../components/FixedButtons";
 
 export default function Layout({ pageContent }) {
-  const location = useLocation();
+  const location = useLocation().pathname;
 
   useEffect(() => {
     window.scrollTo({
@@ -16,11 +17,12 @@ export default function Layout({ pageContent }) {
   }, [location]);
 
   return (
-    <section>
+    <main>
       <Navbar />
+      { location === "/home" && <PopUp/> }
       {pageContent}
       <FixedButtons />
       <Footer />
-    </section>
+    </main>
   );
 }
