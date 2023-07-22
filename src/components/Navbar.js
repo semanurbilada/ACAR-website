@@ -4,7 +4,7 @@ import Icons from "./icons/Icons.js";
 import { navlinks } from "../services/data.js";
 import { Link, useLocation } from "react-router-dom";
 
-function NavItems({ setIsNavbar }) {
+function NavItems({ onClick }) {
     const location = useLocation().pathname;
     const { language } = useContext(StateContext);
     const navbar = navlinks[language]; 
@@ -16,7 +16,7 @@ function NavItems({ setIsNavbar }) {
                     location === "/home" ? "nav-active" : ""
                 }`} 
                 to="/home" 
-                onClick={() => {setIsNavbar(false)}}
+                onClick={onClick}
             >
                 <li>{navbar[0].home}</li>
             </Link>
@@ -26,7 +26,7 @@ function NavItems({ setIsNavbar }) {
                     location === "/places" ? "nav-active" : ""
                 }`} 
                 to="/places"
-                onClick={() => {setIsNavbar(false)}}
+                onClick={onClick}
             >
                <li>{navbar[0].places}</li>
             </Link>
@@ -36,7 +36,7 @@ function NavItems({ setIsNavbar }) {
                     location === "/products" ? "nav-active" : ""
                 }`} 
                 to="/products"
-                onClick={() => {setIsNavbar(false)}}
+                onClick={onClick}
             >
                 <li>{navbar[0].products}</li>
             </Link>
@@ -46,7 +46,7 @@ function NavItems({ setIsNavbar }) {
                     location === "/about" ? "nav-active" : ""
                 }`} 
                 to="/about"
-                onClick={() => {setIsNavbar(false)}}
+                onClick={onClick}
             >
                 <li>{navbar[0].about}</li>
             </Link>
@@ -56,7 +56,7 @@ function NavItems({ setIsNavbar }) {
                     location === "/contact" ? "nav-active" : ""
                 }`} 
                 to="/contact"
-                onClick={() => {setIsNavbar(false)}}
+                onClick={onClick}
             >
                 <li>{navbar[0].contact}</li>
             </Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
                 <nav className="container">
                     <ul className="flex flex-col items-center gap-6">
-                        <NavItems setIsNavbar={setIsNavbar} />
+                        <NavItems onClick={() => {setIsNavbar(false)}} />
                     </ul>
                 </nav>
             </div> 
