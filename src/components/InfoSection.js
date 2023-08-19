@@ -45,9 +45,17 @@ export default function InfoSection({
                     </h5><br/>
                     
                     <Icons iconName={icon} className="w-8 md:w-auto h-8 md:h-auto"/><br/>
+                    <a 
+                        className="text-primary-900 md:text-xl text-lg"
+                        href='https://goo.gl/maps/CW9aJ5NBCLedFv1f8' 
+                        target="_blank" rel="noopener noreferrer nofollow">
+                        {address} 
+                    </a>
+                    
                     <p className="text-primary-900 md:text-xl text-lg">
-                        {address} {servicesInfo1} 
+                        {servicesInfo1} 
                     </p><br/>
+                    
 
                     <p className="text-primary-900 md:text-xl text-lg">
                         {servicesInfo2}

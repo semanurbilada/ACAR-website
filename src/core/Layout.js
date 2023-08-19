@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import PopUp from "../components/PopUp";
+// import PopUp from "../components/PopUp";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ export default function Layout({ pageContent }) {
   return (
     <main>
       <Navbar />
-      { location === "/home" && <PopUp/> }
+      {/* { location === "/home" && <PopUp/> } */}
       {pageContent}
       <FixedButtons />
       <Footer />

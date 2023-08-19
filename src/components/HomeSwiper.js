@@ -6,6 +6,8 @@ import { Pagination, Autoplay } from "swiper";
 import { HomeSwiperData } from '../services/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 
+//TODO: en sona yeni bir swiper eklenecek: ürünler
+
 export default function HomeSwiper() {
     const { language } = useContext(StateContext);
     const swiperData = HomeSwiperData[language];
