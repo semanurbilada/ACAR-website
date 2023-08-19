@@ -9,6 +9,7 @@ import Places from "./pages/Places.js";
 import Products from "./pages/Products";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
+import ProductDetails from "./pages/ProductDetails";
 
 export const StateContext = createContext({
   language: null,
@@ -36,6 +37,12 @@ export default function App() {
             <Route path="/home" element={<Layout pageContent={<Home />} />} />
             <Route path="/places" element={<Layout pageContent={<Places />} />} />
             <Route path="/products" element={<Layout pageContent={<Products />} />} />
+            <Route path="/products/:categoryId" element={<Layout pageContent={<Products />} />} />
+            {/* 
+            TODO: Create a specific layout component for product details;
+            <Route path="/products/:categoryId/:productId" element={<ProductDetailsLayout />} />
+            */}
+            <Route path="/products/:categoryId/:productId" element={<Layout pageContent={<ProductDetails />} />} />
             <Route path="/about" element={<Layout pageContent={<About />} />} />
             <Route path="/contact" element={<Layout pageContent={<Contact />} />} />
           </Routes>

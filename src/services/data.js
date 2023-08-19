@@ -101,21 +101,45 @@ export const FooterData = {
     ],
 };
 
-//ComingSoon component; (for now)
+//ComingSoon component; (temporary)
+// export const ProductsData = {
+//     TR: [
+//         {
+//             content1: "Detaylı ürünler sayfamız yakında sizlerle!",
+//             content2: "Ürün stoklarımız hakkında bilgi almak için bizimle iletişime geçin:",
+//         }
+//     ],
+//     EN: [
+//         {
+//             content1: "Our detailed products page will be here soon!",
+//             content2: "Contact us for information about our product stocks:",
+//         }
+//     ]
+// };
+
+//TODO: data content düzeltilecek!
+//TODO: EN -TR konfigürasyonu yapılacak!
 export const ProductsData = {
-    TR: [
-        {
-            content1: "Detaylı ürünler sayfamız yakında sizlerle!",
-            content2: "Ürün stoklarımız hakkında bilgi almak için bizimle iletişime geçin:",
-        }
+    categories: [
+        { id: "metal", name: "Metal Çeşitleri" },
+        { id: "bakir", name: "Bakır Çeşitleri" },
+        { id: "irons", name: "Irons Çeşitleri" },
     ],
-    EN: [
-        {
-            content1: "Our detailed products page will be here soon!",
-            content2: "Contact us for information about our product stocks:",
-        }
-    ]
-};
+    products: {
+        metal: [
+          { id: 1, name: "Köşebent", description: "Various type of metal" },
+          { id: 2, name: "Sac", description: "Çeşitli boylarda sac" },
+        ],
+        bakir: [
+          { id: 1, name: "Bakır", description: "Comfortable type" },
+          { id: 2, name: "Aliminyum", description: "Versatile type" },
+        ],
+        irons: [
+          { id: 1, name: "Iron-1", description: "Comfortable cotton" },
+          { id: 2, name: "Iron-2", description: "Stylish iron metal" },
+        ],
+    }
+}
 
 export const AboutUsData = {
     TR: [

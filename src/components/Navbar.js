@@ -33,7 +33,7 @@ function NavItems({ onClick }) {
 
             <Link 
                 className={`nav-item ${
-                    location === "/products" ? "nav-active" : ""
+                    location === "/products" || location.startsWith("/products/") ? "nav-active" : ""
                 }`} 
                 to="/products"
                 onClick={onClick}
