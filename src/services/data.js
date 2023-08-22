@@ -118,26 +118,166 @@ export const FooterData = {
 // };
 
 //TODO: data content düzeltilecek!
-//TODO: EN -TR konfigürasyonu yapılacak!
+//TODO: EN - TR konfigürasyonu yapılacak!
 export const ProductsData = {
     categories: [
-        { id: "metal", name: "Metal Çeşitleri" },
-        { id: "bakir", name: "Bakır Çeşitleri" },
-        { id: "irons", name: "Irons Çeşitleri" },
+        { id: "ray", name: "Ray Demiri" },
+        { id: "levha", name: "Levha Sac" },
+        { id: "celik", name: "Yuvarlak Çelik" },
+        { id: "spiral", name: "Spiral Dikişli Boru" },
+        { id: "cekmeBoru", name: "Çelik Çekme Boru" },
+        { id: "makina", name: "Makina Ekipman" },
+        { id: "profil", name: "Profil Demiri" },
+        { id: "hadde", name: "Hadde Mamulleri" }
     ],
     products: {
-        metal: [
-          { id: 1, name: "Köşebent", description: "Various type of metal" },
-          { id: 2, name: "Sac", description: "Çeşitli boylarda sac" },
+        ray: [
+            { 
+                id: 1, 
+                name: "Köşebent", 
+                description: "Various type of metal",
+                image: "/assets/01.jpg"
+            },
+            { 
+                id: 2, 
+                name: "Sac", 
+                description: "Çeşitli boylarda sac",
+                image: "/assets/01.jpg"
+            },
+            { 
+                id: 3, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 4, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/02.jpg" 
+            },
+            { 
+                id: 5, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/03.jpg" 
+            },
+            { 
+                id: 6, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/06.jpg" 
+            },
+            { 
+                id: 1, 
+                name: "Köşebent", 
+                description: "Various type of metal",
+                image: "/assets/07.jpg"
+            },
+            { 
+                id: 2, 
+                name: "Sac", 
+                description: "Çeşitli boylarda sac",
+                image: "/assets/08.jpg"
+            }
         ],
-        bakir: [
-          { id: 1, name: "Bakır", description: "Comfortable type" },
-          { id: 2, name: "Aliminyum", description: "Versatile type" },
+        levha: [
+            { 
+                id: 1, 
+                name: "Bakır", 
+                description: "Comfortable type",
+                image: "/assets/01.jpg" 
+            },
+            {   id: 2, 
+                name: "Aliminyum", 
+                description: "Versatile type",
+                image: "/assets/01.jpg" 
+            },
         ],
-        irons: [
-          { id: 1, name: "Iron-1", description: "Comfortable cotton" },
-          { id: 2, name: "Iron-2", description: "Stylish iron metal" },
+        celik: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/01.jpg" 
+            },
         ],
+        spiral: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/01.jpg" 
+            },
+        ],
+        cekmeBoru: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/01.jpg" 
+            },
+        ],
+        makina: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/01.jpg" 
+            },
+        ],
+        profil: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/01.jpg" 
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/01.jpg" 
+            },
+        ],
+        hadde: [
+            { 
+                id: 1, 
+                name: "Iron-1", 
+                description: "Comfortable cotton",
+                image: "/assets/03.jpg"
+            },
+            { 
+                id: 2, 
+                name: "Iron-2", 
+                description: "Stylish iron metal",
+                image: "/assets/02.jpg"
+            },
+        ]
     }
 }
 
