@@ -101,184 +101,243 @@ export const FooterData = {
     ],
 };
 
-//ComingSoon component; (temporary)
-// export const ProductsData = {
-//     TR: [
-//         {
-//             content1: "Detaylı ürünler sayfamız yakında sizlerle!",
-//             content2: "Ürün stoklarımız hakkında bilgi almak için bizimle iletişime geçin:",
-//         }
-//     ],
-//     EN: [
-//         {
-//             content1: "Our detailed products page will be here soon!",
-//             content2: "Contact us for information about our product stocks:",
-//         }
-//     ]
-// };
-
-//TODO: data content düzeltilecek!
-//TODO: EN - TR konfigürasyonu yapılacak!
-export const ProductsData = {
-    categories: [
-        { id: "ray", name: "Ray Demiri" },
-        { id: "levha", name: "Levha Sac" },
-        { id: "celik", name: "Yuvarlak Çelik" },
-        { id: "spiral", name: "Spiral Dikişli Boru" },
-        { id: "cekmeBoru", name: "Çelik Çekme Boru" },
-        { id: "makina", name: "Makina Ekipman" },
-        { id: "profil", name: "Profil Demiri" },
-        { id: "hadde", name: "Hadde Mamulleri" }
+//MobileProducts component
+export const MobileProductsData = {
+    TR: [
+        {
+            content1: "Kategorili ürünler sayfamız için masaüstünden websitemizi ziyaret etmeyi unutmayın!",
+            content2: "Ürün stoklarımız hakkında detaylı bilgi almak için bizimle iletişime geçin:",
+        }
     ],
-    products: {
-        ray: [
-            { 
-                id: 1, 
-                name: "Köşebent", 
-                description: "Various type of metal",
-                image: "/assets/01.jpg"
-            },
-            { 
-                id: 2, 
-                name: "Sac", 
-                description: "Çeşitli boylarda sac",
-                image: "/assets/01.jpg"
-            },
-            { 
-                id: 3, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 4, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/02.jpg" 
-            },
-            { 
-                id: 5, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/03.jpg" 
-            },
-            { 
-                id: 6, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/06.jpg" 
-            },
-            { 
-                id: 1, 
-                name: "Köşebent", 
-                description: "Various type of metal",
-                image: "/assets/07.jpg"
-            },
-            { 
-                id: 2, 
-                name: "Sac", 
-                description: "Çeşitli boylarda sac",
-                image: "/assets/08.jpg"
-            }
+    EN: [
+        {
+            content1: "Don't forget to visit our website from your desktop for categorized product pages!",
+            content2: "Contact us for detailed information about our product stocks:",
+        }
+    ]
+};
+
+export const ProductsData = {
+    TR: {
+        title: "Ürün Kategorilerimiz",
+        categories: [
+            { id: "ray", name: "Ray Demiri" },
+            { id: "levha", name: "Levha Sac" },
+            { id: "celik", name: "Yuvarlak Çelik" },
+            { id: "spiral", name: "Spiral Dikişli Boru" },
+            { id: "cekmeBoru", name: "Çelik Çekme Boru" },
+            { id: "makina", name: "Makina Ekipman" },
+            { id: "profil", name: "Profil Demiri" },
+            { id: "hadde", name: "Hadde Mamulleri" }
         ],
-        levha: [
-            { 
-                id: 1, 
-                name: "Bakır", 
-                description: "Comfortable type",
-                image: "/assets/01.jpg" 
-            },
-            {   id: 2, 
-                name: "Aliminyum", 
-                description: "Versatile type",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        celik: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        spiral: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        cekmeBoru: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        makina: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        profil: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/01.jpg" 
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/01.jpg" 
-            },
-        ],
-        hadde: [
-            { 
-                id: 1, 
-                name: "Iron-1", 
-                description: "Comfortable cotton",
-                image: "/assets/03.jpg"
-            },
-            { 
-                id: 2, 
-                name: "Iron-2", 
-                description: "Stylish iron metal",
-                image: "/assets/02.jpg"
-            },
-        ]
-    }
+        products: {
+            ray: [
+                { 
+                    id: 1,
+                    image: "/assets/01.jpg"
+                },
+                { 
+                    id: 2,                    
+                    image: "/assets/02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/01.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/02.jpg"
+                },
+                { 
+                    id: 7,  
+                    image: "/assets/03.jpg" 
+                },
+                { 
+                    id: 8,  
+                    image: "/assets/04.jpg" 
+                }
+            ],
+            levha: [
+                { 
+                    id: 1, 
+                    image: "/assets/01.jpg" 
+                },
+                {   id: 2,
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            celik: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            spiral: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            cekmeBoru: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            makina: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            profil: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            hadde: [
+                { 
+                    id: 1,  
+                    image: "/assets/03.jpg"
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/02.jpg"
+                },
+            ]
+        }
+    },
+    EN: {
+        title: "Our Product Categories",
+        categories: [
+            { id: "ray", name: "Rail Iron" },
+            { id: "levha", name: "Sheet Metal" },
+            { id: "celik", name: "Round Steel" },
+            { id: "spiral", name: "Spiral Welded Pipe" },
+            { id: "cekmeBoru", name: "Steel Drawn Tube" },
+            { id: "makina", name: "Machine Equipment" },
+            { id: "profil", name: "Profile Iron" },
+            { id: "hadde", name: "Rolled Products" }
+            ],
+        products: {
+            ray: [
+                { 
+                    id: 1,
+                    image: "/assets/01.jpg"
+                },
+                { 
+                    id: 2,                    
+                    image: "/assets/02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/04.jpg" 
+                }
+            ],
+            levha: [
+                { 
+                    id: 1, 
+                    image: "/assets/01.jpg" 
+                },
+                {   id: 2,
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            celik: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            spiral: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            cekmeBoru: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            makina: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            profil: [
+                { 
+                    id: 1,  
+                    image: "/assets/01.jpg" 
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/01.jpg" 
+                },
+            ],
+            hadde: [
+                { 
+                    id: 1,  
+                    image: "/assets/03.jpg"
+                },
+                { 
+                    id: 2,  
+                    image: "/assets/02.jpg"
+                },
+            ]
+        }
+    },
 }
 
 export const AboutUsData = {
