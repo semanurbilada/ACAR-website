@@ -18,6 +18,7 @@ module.exports = {
         'slide-1' : "url('../../public/assets/slide1.jpg')",
         'slide-2' : "url('../../public/assets/slide2.jpg')",
         'slide-3' : "url('../../public/assets/slide3.jpg')",
+        'slide-4' : "url('../../public/assets/slide4.jpg')",
       },
       container: {
         center: true,
@@ -42,6 +43,9 @@ module.exports = {
         },
       },
       boxShadow: {
+        'none': '0 0 #0000',
+        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+        'xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
         'custom': 'inset 0 35px 55px -15px rgba(30, 41, 59)',
       },
       animation: {

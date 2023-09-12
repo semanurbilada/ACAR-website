@@ -1,12 +1,11 @@
 import 'swiper/css';
 import "../css/swiper.css";
 import { useContext } from "react";
+import { Link } from 'react-router-dom';
 import { StateContext } from "../App.js";
 import { Pagination, Autoplay } from "swiper";
 import { HomeSwiperData } from '../services/data';
 import { Swiper, SwiperSlide } from "swiper/react";
-
-//TODO: en sona yeni bir swiper eklenecek: ürünler
 
 export default function HomeSwiper() {
     const { language } = useContext(StateContext);
@@ -28,7 +27,7 @@ export default function HomeSwiper() {
             }}
         >
             <SwiperSlide className="bg-slide-1 bg-fixed bg-cover shadow-custom">
-                <h1 className="text-primary-900  md:text-5xl text-2xl text-center">
+                <h1 className="text-primary-900 md:text-5xl text-2xl text-center">
                     {swiperData[0].content1}
                 </h1>
             </SwiperSlide>
@@ -43,6 +42,19 @@ export default function HomeSwiper() {
                 <h2 className="text-white md:text-4xl text-2xl text-center">
                     {swiperData[2].content3}
                 </h2>
+            </SwiperSlide>
+
+            <SwiperSlide className="bg-slide-4 bg-cover shadow-custom">
+                <h2 className="text-white md:text-4xl text-2xl sm:text-center text-start">
+                    {swiperData[3].content4}
+                </h2>
+
+                <Link 
+                    className="base-button text-white w-40" 
+                    to="/products"
+                >
+                    {swiperData[4].button}
+                </Link>
             </SwiperSlide>
         </Swiper>
     );

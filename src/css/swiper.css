@@ -52,13 +52,11 @@
     width: 8rem;
 }
 
-/* max-width: 768px olabilir */
 @media screen and (max-width:983px) {
     .swiper {
         height: 50vh;
     }
     .swiper-slide {
         justify-content: flex-start;
-        
     } 
 }
