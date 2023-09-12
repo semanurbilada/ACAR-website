@@ -23,12 +23,16 @@ export const HomeSwiperData = {
     TR: [
         { content1: "Demir, Çelik Sektörünün en köklülerinden!" },
         { content2: "Kaliteli Demir, Çelik ve Metal için doğru adres!" },
-        { content3: "Sektörün lideri olarak Demir, Çelik ve Metal Geri Dönüşümüne katkıda bulunuyoruz!" }
+        { content3: "Sektörün lideri olarak Demir, Çelik ve Metal Geri Dönüşümüne katkıda bulunuyoruz!" },
+        { content4: "Ürünler sayfamıza göz atın!" },
+        { button: "Ürünlerimiz" }
     ],
     EN: [
         { content1: "The most rooted in the Steel Industry!" },
         { content2: "The right address for Quality Iron, Steel and Metal!" },
-        { content3: "As the leader of the industry, we contribute to Iron, Steel and Metal Recycling!" }
+        { content3: "As the leader of the industry, we contribute to Iron, Steel and Metal Recycling!" },
+        { content4: "Take a look at our Products Page!" },
+        { button: "Our Products" }
     ]
 };
 
@@ -122,116 +126,170 @@ export const ProductsData = {
         title: "Ürün Kategorilerimiz",
         categories: [
             { id: "ray", name: "Ray Demiri" },
-            { id: "levha", name: "Levha Sac" },
+            { id: "levha", name: "Levha - Rulo Sac Grubu" },
             { id: "celik", name: "Yuvarlak Çelik" },
             { id: "spiral", name: "Spiral Dikişli Boru" },
             { id: "cekmeBoru", name: "Çelik Çekme Boru" },
             { id: "makina", name: "Makina Ekipman" },
-            { id: "profil", name: "Profil Demiri" },
-            { id: "hadde", name: "Hadde Mamulleri" }
+            { id: "haddePro", name: "Hadde - Dikişli Profil Grubu" }
         ],
         products: {
             ray: [
                 { 
                     id: 1,
-                    image: "/assets/01.jpg"
+                    image: "/assets/r-01.jpg"
                 },
                 { 
                     id: 2,                    
-                    image: "/assets/02.jpg"
+                    image: "/assets/r-02.jpg"
                 },
                 { 
                     id: 3,  
-                    image: "/assets/03.jpg" 
+                    image: "/assets/r-03.jpg" 
                 },
                 { 
                     id: 4,  
-                    image: "/assets/04.jpg" 
+                    image: "/assets/r-04.jpg" 
                 },
-                { 
-                    id: 5,
-                    image: "/assets/01.jpg"
-                },
-                { 
-                    id: 6,                    
-                    image: "/assets/02.jpg"
-                },
-                { 
-                    id: 7,  
-                    image: "/assets/03.jpg" 
-                },
-                { 
-                    id: 8,  
-                    image: "/assets/04.jpg" 
-                }
             ],
             levha: [
                 { 
-                    id: 1, 
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/l-01.jpg"
                 },
-                {   id: 2,
-                    image: "/assets/01.jpg" 
+                { 
+                    id: 2,                    
+                    image: "/assets/l-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/l-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/l-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/l-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/l-06.jpg"
+                },
+                { 
+                    id: 7,  
+                    image: "/assets/l-07.jpg" 
                 },
             ],
             celik: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/y-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/y-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/y-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/y-04.jpg" 
                 },
             ],
             spiral: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/s-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/s-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/s-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/s-04.jpg" 
                 },
             ],
             cekmeBoru: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/c-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/c-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/c-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/c-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/c-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/c-06.jpg"
+                },
+                { 
+                    id: 7,  
+                    image: "/assets/c-07.jpg" 
                 },
             ],
             makina: [
                 { 
                     id: 1,  
-                    image: "/assets/01.jpg" 
+                    image: "/assets/m-01.jpg" 
                 },
                 { 
                     id: 2,  
-                    image: "/assets/01.jpg" 
+                    image: "/assets/m-02.jpg" 
                 },
+                {
+                    id: 3,
+                    image: "/assets/m-03.jpg" 
+                },
+                {
+                    id: 4,
+                    image: "/assets/m-04.jpg" 
+                }
             ],
-            profil: [
+            haddePro: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/p-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
-                },
-            ],
-            hadde: [
-                { 
-                    id: 1,  
-                    image: "/assets/03.jpg"
+                    id: 2,                    
+                    image: "/assets/p-02.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/02.jpg"
+                    id: 3,  
+                    image: "/assets/p-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/p-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/p-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/p-06.jpg"
                 },
             ]
         }
@@ -245,95 +303,161 @@ export const ProductsData = {
             { id: "spiral", name: "Spiral Welded Pipe" },
             { id: "cekmeBoru", name: "Steel Drawn Tube" },
             { id: "makina", name: "Machine Equipment" },
-            { id: "profil", name: "Profile Iron" },
-            { id: "hadde", name: "Rolled Products" }
-            ],
+            { id: "haddePro", name: "Rolled Profile Group" }
+        ],
         products: {
             ray: [
                 { 
                     id: 1,
-                    image: "/assets/01.jpg"
+                    image: "/assets/r-01.jpg"
                 },
                 { 
                     id: 2,                    
-                    image: "/assets/02.jpg"
+                    image: "/assets/r-02.jpg"
                 },
                 { 
                     id: 3,  
-                    image: "/assets/03.jpg" 
+                    image: "/assets/r-03.jpg" 
                 },
                 { 
                     id: 4,  
-                    image: "/assets/04.jpg" 
-                }
+                    image: "/assets/r-04.jpg" 
+                },
             ],
             levha: [
                 { 
-                    id: 1, 
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/l-01.jpg"
                 },
-                {   id: 2,
-                    image: "/assets/01.jpg" 
+                { 
+                    id: 2,                    
+                    image: "/assets/l-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/l-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/l-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/l-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/l-06.jpg"
+                },
+                { 
+                    id: 7,  
+                    image: "/assets/l-07.jpg" 
                 },
             ],
             celik: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/y-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/y-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/y-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/y-04.jpg" 
                 },
             ],
             spiral: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/s-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/s-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/s-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/s-04.jpg" 
                 },
             ],
             cekmeBoru: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/c-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
+                    id: 2,                    
+                    image: "/assets/c-02.jpg"
+                },
+                { 
+                    id: 3,  
+                    image: "/assets/c-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/c-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/c-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/c-06.jpg"
+                },
+                { 
+                    id: 7,  
+                    image: "/assets/c-07.jpg" 
                 },
             ],
             makina: [
                 { 
                     id: 1,  
-                    image: "/assets/01.jpg" 
+                    image: "/assets/m-01.jpg" 
                 },
                 { 
                     id: 2,  
-                    image: "/assets/01.jpg" 
+                    image: "/assets/m-02.jpg" 
                 },
+                {
+                    id: 3,
+                    image: "/assets/m-03.jpg" 
+                }
             ],
-            profil: [
+            haddePro: [
                 { 
-                    id: 1,  
-                    image: "/assets/01.jpg" 
+                    id: 1,
+                    image: "/assets/p-01.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/01.jpg" 
-                },
-            ],
-            hadde: [
-                { 
-                    id: 1,  
-                    image: "/assets/03.jpg"
+                    id: 2,                    
+                    image: "/assets/p-02.jpg"
                 },
                 { 
-                    id: 2,  
-                    image: "/assets/02.jpg"
+                    id: 3,  
+                    image: "/assets/p-03.jpg" 
+                },
+                { 
+                    id: 4,  
+                    image: "/assets/p-04.jpg" 
+                },
+                { 
+                    id: 5,
+                    image: "/assets/p-05.jpg"
+                },
+                { 
+                    id: 6,                    
+                    image: "/assets/p-06.jpg"
                 },
             ]
         }
