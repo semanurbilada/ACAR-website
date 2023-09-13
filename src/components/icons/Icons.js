@@ -97,11 +97,25 @@ export default function Icons({ iconName, className, onClick }) {
         </svg>
     );
 
+    const sidebarIcon = (
+        <svg 
+            className={className}
+            onClick={onClick}
+            width="28px" 
+            height="28px" 
+            viewBox="0 0 24 24" 
+            fill="#274c6c"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fillRule="evenodd" clipRule="evenodd" d="M12 6.34315L6.34317 12L12 17.6569L17.6569 12L12 6.34315ZM2.10052 12L12 21.8995L21.8995 12L12 2.10051L2.10052 12Z"></path> </g>
+        </svg>
+    );
+
     return (
         <>
             {iconName === "menu" && menuIcon}
             {iconName === "mail" && mailIcon}
             {iconName === "phone" && phoneIcon}
+            {iconName === "sidebar" && sidebarIcon}
             {iconName === "location" && locationIcon}
             {iconName === "facebook" && facebookIcon}
             {iconName === "instagram" && instagramIcon}

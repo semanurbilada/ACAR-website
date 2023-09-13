@@ -298,12 +298,12 @@ export const ProductsData = {
         title: "Our Product Categories",
         categories: [
             { id: "ray", name: "Rail Iron" },
-            { id: "levha", name: "Sheet Metal" },
+            { id: "levha", name: "Plate - Coil Sheet Metal Group" },
             { id: "celik", name: "Round Steel" },
             { id: "spiral", name: "Spiral Welded Pipe" },
             { id: "cekmeBoru", name: "Steel Drawn Tube" },
             { id: "makina", name: "Machine Equipment" },
-            { id: "haddePro", name: "Rolled Profile Group" }
+            { id: "haddePro", name: "Rolled - Welded Profile Group" }
         ],
         products: {
             ray: [
