@@ -50,7 +50,7 @@ export default function HomeSwiper() {
                 </h2>
 
                 <Link 
-                    className="base-button text-white w-40" 
+                    className="base-button -mt-4 w-auto text-gray-50 hover:bg-primary-700 hover:text-gray-50 md:text-base text-sm shadow-xl" 
                     to="/products"
                 >
                     {swiperData[4].button}
