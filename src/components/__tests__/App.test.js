@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App, { StateContext } from '../../App';
 
-// Mock components to simplify tests
+// Mock func for rendering components like already visited
 jest.mock('../../core/Layout', () => ({ pageContent }) => <div>{pageContent}</div>);
 jest.mock('../../pages/Home', () => () => <div>Home</div>);
 jest.mock('../../pages/Places', () => () => <div>Places</div>);
@@ -13,7 +13,7 @@ jest.mock('../../pages/Language', () => () => <div>Language</div>);
 
 // Test group with describe function
 describe('App component', () => {
-  // Custom render function to include StateContext provider
+  // Render statecontext
   const renderWithContext = (ui, { providerProps, ...renderOptions }) => {
     return render(
       <StateContext.Provider {...providerProps}>{ui}</StateContext.Provider>,
@@ -35,7 +35,7 @@ describe('App component', () => {
     expect(localStorage.getItem('language')).toBe('TR');
   });
 
-  // test2
+  // test2 + test3
   test('Context updates language and persists in localStorage', () => {
     const setLanguageMock = jest.fn((lang) => localStorage.setItem('language', lang));
     const providerProps = {
@@ -49,8 +49,9 @@ describe('App component', () => {
     // Simulate a language change
     providerProps.value.setLanguage('EN');
 
-    // Check that localStorage is updated to 'EN'
+    // Check that localStorage is updated to selected language
     expect(localStorage.getItem('language')).toBe('EN');
+    // Check that language is changed in the right way
     expect(setLanguageMock).toHaveBeenCalledWith('EN');
   });
 });
