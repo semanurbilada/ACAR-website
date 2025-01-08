@@ -33,7 +33,12 @@ export default function Footer() {
 
                     <div className="flex flex-col items-center justify-center gap-4">
                         <p>{footerData[2].content}</p>
-                        <Map />
+                        <a 
+                            className="text-primary-900 md:text-xl text-lg"
+                            href='https://goo.gl/maps/CW9aJ5NBCLedFv1f8' 
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            <Map />
+                        </a>
                     </div>
                 </div>
             ) :
