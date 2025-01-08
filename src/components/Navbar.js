@@ -21,7 +21,7 @@ function NavItems({ onClick }) {
                 <li>{navbar[0].home}</li>
             </Link>
 
-            <Link 
+            {/* <Link 
                 className={`nav-item ${
                     location === "/places" ? "nav-active" : ""
                 }`} 
@@ -29,7 +29,7 @@ function NavItems({ onClick }) {
                 onClick={onClick}
             >
                <li>{navbar[0].places}</li>
-            </Link>
+            </Link> */}
 
             <Link 
                 className={`nav-item ${
